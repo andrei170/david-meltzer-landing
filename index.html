@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Meltzer - The Second-Half Playbook For Operators</title>
+<meta name="description" content="From the co-founder of Sports 1 Marketing and Chairman of the Napoleon Hill Institute. Mentorship for operators in the second half.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0c0c0c;--bg-2:#141210;--surface:#1c1916;--line:rgba(245,158,11,.14);
+--text:#f5efe6;--muted:#9a8f80;--accent:#f59e0b;--accent-2:#e8831a;--accent-3:#fbbf3d;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:radial-gradient(circle,rgba(245,158,11,.03) 1px,transparent 1px);background-size:28px 28px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:-25%;left:50%;transform:translateX(-50%);width:80%;height:70%;background:radial-gradient(ellipse,rgba(232,131,26,.09) 0%,transparent 60%);pointer-events:none;z-index:0}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{padding:26px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(12,12,12,.94);backdrop-filter:blur(14px);z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:16px;letter-spacing:.08em;text-transform:uppercase}
+.logo span{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{padding:11px 22px;background:linear-gradient(135deg,var(--accent-2) 0%,var(--accent) 100%);color:#0c0c0c;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-block;padding:6px 16px;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);border-radius:22px;font-size:12px;font-weight:600;color:var(--accent-3);letter-spacing:.18em;text-transform:uppercase;margin-bottom:26px}
+h1{font-size:clamp(42px,6vw,74px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:26px}
+h1 em{font-style:normal;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 50%,var(--accent-2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h2{font-size:clamp(32px,4vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:20px}
+h3{font-size:22px;font-weight:700;margin-bottom:14px}
+p{color:var(--muted);font-size:17px;max-width:680px}
+.hero{padding-top:80px;text-align:center}
+.hero p{font-size:20px;margin:0 auto 40px;max-width:740px}
+.cta-primary{display:inline-block;padding:18px 40px;background:linear-gradient(135deg,var(--accent-2) 0%,var(--accent) 100%);color:#0c0c0c;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;box-shadow:0 10px 40px rgba(245,158,11,.25);transition:.2s}
+.cta-primary:hover{transform:translateY(-2px)}
+.vsl-box{max-width:920px;margin:60px auto;aspect-ratio:16/9;background:linear-gradient(135deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:18px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vsl-box::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(245,158,11,.1) 0%,transparent 60%)}
+.play-btn{width:92px;height:92px;border-radius:50%;background:rgba(245,158,11,.14);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;z-index:1;transition:.3s}
+.play-btn:hover{transform:scale(1.05)}
+.play-btn svg{width:34px;height:34px;fill:var(--accent-3);margin-left:5px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin:80px 0 0;padding:42px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat-num{font-size:38px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.stat-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:8px}
+.problem-grid,.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.card{padding:36px;background:linear-gradient(180deg,var(--surface) 0%,var(--bg-2) 100%);border:1px solid var(--line);border-radius:16px;transition:.3s}
+.card:hover{border-color:rgba(245,158,11,.4);transform:translateY(-4px)}
+.card-num{font-size:13px;color:var(--accent-3);font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+.card h3{color:var(--text)}
+.card p{font-size:15px}
+.divider{height:1px;background:linear-gradient(90deg,transparent 0%,var(--line) 50%,transparent 100%)}
+.lead-capture{background:linear-gradient(135deg,rgba(245,158,11,.08) 0%,rgba(232,131,26,.04) 100%);border:1px solid rgba(245,158,11,.22);border-radius:24px;padding:72px 60px;text-align:center;margin:80px 0}
+.lead-capture h2{max-width:640px;margin:0 auto 20px}
+.form-row{display:flex;gap:12px;max-width:520px;margin:36px auto 0}
+.form-row input{flex:1;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:12px;color:var(--text);font-size:15px;font-family:inherit}
+.form-row input:focus{outline:none;border-color:var(--accent)}
+.form-row button{padding:18px 32px;background:linear-gradient(135deg,var(--accent-2) 0%,var(--accent) 100%);color:#0c0c0c;border:none;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;font-family:inherit}
+.offer-box{background:linear-gradient(135deg,#141210 0%,#1c1714 100%);border:1px solid rgba(245,158,11,.25);border-radius:24px;padding:60px;margin-top:40px}
+.offer-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.offer-price{font-size:48px;font-weight:800;background:linear-gradient(135deg,var(--accent) 0%,var(--accent-3) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.03em;line-height:1.1}
+.offer-price small{font-size:18px;color:var(--muted);font-weight:500;-webkit-text-fill-color:var(--muted);display:block;margin-top:10px}
+.feature-list{list-style:none;margin-top:26px}
+.feature-list li{padding:12px 0;color:var(--text);display:flex;align-items:flex-start;gap:12px;font-size:15px}
+.feature-list li::before{content:'✓';color:var(--accent-3);font-weight:700;flex-shrink:0}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0;cursor:pointer}
+.faq-q{display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:18px;color:var(--text)}
+.faq-plus{width:24px;height:24px;position:relative;flex-shrink:0}
+.faq-plus::before,.faq-plus::after{content:'';position:absolute;background:var(--accent-3);top:50%;left:50%;transition:.3s}
+.faq-plus::before{width:14px;height:2px;transform:translate(-50%,-50%)}
+.faq-plus::after{width:2px;height:14px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:.3s}
+.faq-item.open .faq-a{max-height:320px;padding-top:14px}
+.footer{padding:60px 0;border-top:1px solid var(--line);text-align:center}
+.footer p{margin:0 auto;font-size:14px}
+@media(max-width:768px){
+.problem-grid,.pillar-grid,.stats{grid-template-columns:1fr}
+.offer-grid{grid-template-columns:1fr}
+.lead-capture,.offer-box{padding:40px 24px}
+.form-row{flex-direction:column}
+section{padding:70px 0}
+.stats{gap:20px}
+}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s}
+.reveal.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<nav>
+<div class="container nav-inner">
+<div class="logo">DAVID MELTZER <span>· GROWTH PACKAGE</span></div>
+<a href="#apply" class="nav-cta">Book A Call</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="eyebrow reveal">THE SECOND-HALF PLAYBOOK</div>
+<h1 class="reveal">Mentorship From The Operator Who <em>Built It, Lost It,</em> And Rebuilt It</h1>
+<p class="reveal">Co-founder of Sports 1 Marketing with Warren Moon. Former CEO of the sports agency that inspired Jerry Maguire. Chairman of the Napoleon Hill Institute. Three-time international bestseller. This is where the operator track starts.</p>
+<div class="vsl-box reveal">
+<div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+</div>
+<a href="#apply" class="cta-primary reveal">Book A Call →</a>
+<div class="stats reveal">
+<div><div class="stat-num">788K</div><div class="stat-label">Instagram</div></div>
+<div><div class="stat-num">85K</div><div class="stat-label">YouTube</div></div>
+<div><div class="stat-num">3×</div><div class="stat-label">Bestseller</div></div>
+<div><div class="stat-num">Sports 1</div><div class="stat-label">Co-Founder</div></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">WHERE OPERATORS GET STUCK</div>
+<h2 class="reveal">Three Reasons Good Operators<br>Plateau In The Second Half</h2>
+<p class="reveal" style="font-size:18px">Not one of them is mindset. Mindset is the ground floor. The plateau sits higher up.</p>
+<div class="problem-grid">
+<div class="card reveal"><div class="card-num">PLATEAU 01</div><h3>Decisions, Not Strategy</h3><p>By the time you get to the second half, strategy is rarely the problem. Decision speed and honesty is. Most founders are still winging the big calls at fifty.</p></div>
+<div class="card reveal"><div class="card-num">PLATEAU 02</div><h3>The Portfolio Got Messy</h3><p>Too many commitments. Too many maybes. The cost of staying in the wrong rooms is the silent killer of the second-half operator.</p></div>
+<div class="card reveal"><div class="card-num">PLATEAU 03</div><h3>The Second Career Is Missing</h3><p>The first career pays for the infrastructure. The second pays for the meaning. Most operators never build the second one on purpose.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="eyebrow reveal">THE FRAMEWORK</div>
+<h2 class="reveal">Game-Time Decision Making<br>In Three Pillars</h2>
+<div class="pillar-grid">
+<div class="card reveal"><div class="card-num">PILLAR 1</div><h3>Decide Faster, Defend Cleaner</h3><p>The three-question framework I teach boardrooms. Ninety seconds per question. Runs material decisions through a worst-case, cost-of-inaction, and precedent lens.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 2</div><h3>Simplify The Portfolio</h3><p>Fewer, better commitments. Clear yes. Easy no. No maybes. The audit I run with every executive inside the first two sessions.</p></div>
+<div class="card reveal"><div class="card-num">PILLAR 3</div><h3>Build The Second Career</h3><p>Teaching. Advising. Writing. Investing. The second career sits on top of the first, not instead of it. This is where most operators get meaning and margin back.</p></div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container">
+<div class="lead-capture reveal">
+<div class="eyebrow">FREE TRAINING</div>
+<h2>The 12-Minute Decision Framework</h2>
+<p style="margin:0 auto">The three-question framework I teach every boardroom. The same one I wish I had run before the bankruptcy at forty. Drop your email, watch it today.</p>
+<form class="form-row" onsubmit="event.preventDefault();alert('Check your inbox. Training sent.')">
+<input type="email" placeholder="Enter your email" required>
+<button type="submit">Get Access →</button>
+</form>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="apply">
+<div class="container">
+<div class="eyebrow reveal">THE COMMUNITY</div>
+<h2 class="reveal">Exclusive Coaching Community</h2>
+<div class="offer-box reveal">
+<div class="offer-grid">
+<div>
+<div class="offer-price">Annual Membership<small>Investment sits in the low-four-figure range for the year. Details on the qualification call.</small></div>
+<p style="margin-top:20px">Weekly live coaching with me. Not a replay library. A members-only feed. The book bundle. Guest sessions through the year with operators I actually trust. Priced so one good decision inside the first month pays for the whole year.</p>
+<ul class="feature-list">
+<li>Weekly live group coaching (I show up)</li>
+<li>Private members feed and community</li>
+<li>Book bundle: Connected To Goodness, Compassionate Capitalism, Be Unstoppable</li>
+<li>Guest sessions with senior operators (quarterly)</li>
+<li>Access to the Game-Time Decision Making lesson library</li>
+<li>Direct member-to-member connections</li>
+<li>No monthly renewal trap. Annual. Transparent.</li>
+</ul>
+</div>
+<div>
+<div style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);border-radius:16px;padding:32px;text-align:center">
+<div class="eyebrow">PROOF</div>
+<h3 style="margin-bottom:12px">Three Decades. One Bankruptcy. One Rebuild.</h3>
+<p style="margin:0 auto 24px">Former CEO of the Steinberg agency. Co-founded Sports 1 Marketing with Hall of Fame QB Warren Moon. Chairman of the Napoleon Hill Institute today.</p>
+<a href="#apply" class="cta-primary" style="width:100%">Book A Call →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section>
+<div class="container" style="max-width:820px">
+<div class="eyebrow reveal">FAQ</div>
+<h2 class="reveal">Common Questions</h2>
+<div style="margin-top:40px">
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is the community actually for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Operators and sales professionals in the 30-to-60 range who have already built something real and want structured mentorship from someone who has been at the top, lost it, and rebuilt. Not a first-business course.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Is David actually on the weekly calls?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Yes. Weekly live coaching is run by David. This is not a branded replay library. If the live call is not on a given week, it is communicated in advance and made up.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>What is the time commitment?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Roughly 90 minutes a week for the live coaching. Additional time as you choose inside the member feed and community. Designed to fit a full-time operator schedule.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>How is this different from the 50-dollar monthly groups?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Depth. The annual community is the flagship. Weekly live coaching with David, the full book bundle, guest sessions, members feed. The monthly groups are narrower in scope and format.</p></div>
+</div>
+<div class="faq-item reveal" onclick="this.classList.toggle('open')">
+<div class="faq-q"><span>Who is this not for?</span><div class="faq-plus"></div></div>
+<div class="faq-a"><p>Anyone looking for a shortcut or a magic framework. The community works for operators who do the work between the live sessions. If you want a replay library to binge, this is not the right room.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="text-align:center">
+<div class="container">
+<h2 class="reveal">The Second Half<br>Starts When You Decide It Does</h2>
+<p class="reveal" style="margin:20px auto 40px">Book a 15-minute qualification call. If it is a fit, we move forward. If it is not, we will tell you.</p>
+<a href="#apply" class="cta-primary reveal">Book A Call →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>Built by AG1 Consulting · info@andreicopy.net · April 2026</p>
+</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+</script>
+</body>
+</html>
